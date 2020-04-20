@@ -111,7 +111,11 @@ function draw() {
   text("Plant Cell",width/2 - 720,20)
   text("Alvan Alam",width/2 - 720,40)
   text("BIO 30",width/2 - 720,60)
-  text("19/03/2020",width/2 - 720,80)
+  text("20/04/2020",width/2 - 720,80)
+  text("Plant Cell",width/2+270,height - 70)
+  text("Alvan Alam",width/2 + 270,height - 50)
+  text("BIO 30",width/2 + 270,height - 30)
+  text("20/04/2020",width/2+270,height - 10)
   cell();
   display();
 }
@@ -490,8 +494,9 @@ function display() {
   stroke(0);
   fill(0);
   if(info === "none") {
+    text("Key",width/2+width/4+25, 40) 
     textSize(20);
-    text("move mouse to view organelles",width/2+width/4-75, 40) 
+    text("hover mouse over model to view organelles",width/2+width/4-75, 80) 
   }else if(info === "nucleolus") {
     text("Nucleolus",width/2+width/4+25, 40) 
     text("Function:",width/2+width/4-75, 110);
